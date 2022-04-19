@@ -1,7 +1,9 @@
 <?php 
     $text = "Blasphemous Blade is a Greatsword in Elden Ring. The Blasphemous Blade scales primarily with Strength, Dexterity and Faith and is a Weapon that deals additional fire damage. Sacred sword of Rykard, Lord of Blasphemy. surface of this blade.";
     
-    $badWord = $_GET['badWord'] ?? "Elden Ring";
+    $badWord = $_GET['badWord'] ?? ("Elden Ring");
+
+    /* $textCensored = str_replace('Elden Ring', '***', $text ); */
     
 
     
@@ -21,6 +23,7 @@
     <pre> text length: <?php echo(strlen($text))?> </pre>
     <h1>Censored Text</h1>
     <p><?php echo str_replace($badWord, "***", $text) ?></p>
-    <pre>Censored word is <?php echo $badWord?></pre> 
+    <pre>Censored word is <?php echo $badWord?></pre>
+    <!-- <p><?php var_dump($textCensored)?></p> -->
 </body>
 </html>

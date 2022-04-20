@@ -1,7 +1,11 @@
 <?php 
     $text = "Blasphemous Blade is a Greatsword in Elden Ring. The Blasphemous Blade scales primarily with Strength, Dexterity and Faith and is a Weapon that deals additional fire damage. Sacred sword of Rykard, Lord of Blasphemy. surface of this blade.";
     
-    $badWord = $_GET['badWord'] ?? ("Elden Ring");
+    //in questo caso invece devo darglielo da riga di comando con arg1 o arg2 o da url direttamente
+    $badWord = $_GET['badWord'] ?? "";
+
+    // in questo caso il get glie lo do io
+    /* $badWord = $_GET['badWord'] ?? ("Elden Ring"); */
 
     /* $textCensored = str_replace('Elden Ring', '***', $text ); */
     
